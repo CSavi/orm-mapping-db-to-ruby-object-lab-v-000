@@ -60,7 +60,9 @@ class Student
     sql = <<-SQL
       SELECT COUNT(*)
       FROM students
-      GROUP BY students.grade = 9
+      WHERE students.grade = 9
+      GROUP BY students.grade
+      ORDER BY students.grade
     SQL
   end
 
