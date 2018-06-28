@@ -73,12 +73,12 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE students.grade < 12
+      WHERE grade < 12
     SQL
   #  binding.pry
     DB[:conn].execute(sql).flatten.map do |row|
       self.new_from_db(row)
-    end   
+    end
   end
 
   def self.drop_table
