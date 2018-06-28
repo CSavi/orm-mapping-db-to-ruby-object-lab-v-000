@@ -74,7 +74,7 @@ class Student
       WHERE students.grade < 12
     SQL
     binding.pry
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql).flatten
   end
 
   def self.drop_table
