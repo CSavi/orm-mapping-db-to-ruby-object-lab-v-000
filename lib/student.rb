@@ -22,6 +22,7 @@ class Student
        WHERE name = ?
        LIMIT 1
     SQL
+    DB[:conn].execute(sql, name)
     # return a new instance of the Student class
   end
 
