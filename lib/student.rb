@@ -96,8 +96,8 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE students.grade = 10
-      ORDER BY ASC LIMIT 1
+      GROUP BY students.grade = 10
+      students.id = 1
     SQL
   end
 
