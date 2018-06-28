@@ -97,7 +97,7 @@ class Student
       SELECT *
       FROM students
       WHERE students.grade = 10
-      ORDER BY DESC LIMIT 1
+      ORDER BY ASC LIMIT 1
     SQL
   end
 
