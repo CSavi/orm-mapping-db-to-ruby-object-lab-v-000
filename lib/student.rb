@@ -98,6 +98,7 @@ class Student
       FROM students
       WHERE students.grade = 10
       GROUP BY students.id = 1
+      ORDER BY studnets.id = 1
     SQL
   end
 
