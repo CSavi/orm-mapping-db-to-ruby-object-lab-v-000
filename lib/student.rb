@@ -58,7 +58,7 @@ class Student
   #returns an array of all students in grade 9
   def self.count_all_students_in_grade_9
     sql = <<-SQL
-      SELECT COUNT(students.grade)
+      SELECT COUNT(Students.grade)
       FROM students
       WHERE students.grade = 9
       GROUP BY students.grade
