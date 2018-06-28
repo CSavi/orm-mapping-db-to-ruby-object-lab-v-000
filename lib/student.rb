@@ -96,8 +96,8 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      GROUP BY students.grade = 10
-      students.id = 1
+      WHERE students.grade = 10
+      GROUP BY students.id = 1
     SQL
   end
 
