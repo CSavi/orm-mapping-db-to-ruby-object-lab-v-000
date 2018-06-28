@@ -98,7 +98,7 @@ class Student
       FROM students
       WHERE students.grade = 10
       GROUP BY students.grade
-      ORDER BY studnets.grade LIMIT 1
+      ORDER BY students.grade LIMIT 1
     SQL
   end
 
