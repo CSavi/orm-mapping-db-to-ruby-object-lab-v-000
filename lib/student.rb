@@ -71,6 +71,7 @@ class Student
       FROM students
       WHERE students.grade < 12
     SQL
+    DB[:conn].execute(sql)
   end
 
   def self.drop_table
