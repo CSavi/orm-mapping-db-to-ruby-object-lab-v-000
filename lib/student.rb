@@ -73,7 +73,7 @@ class Student
       FROM students
       WHERE students.grade < 12
     SQL
-    binding.pry
+  #  binding.pry
     DB[:conn].execute(sql).flatten
   end
 
