@@ -55,8 +55,13 @@ class Student
     DB[:conn].execute(sql)
   end
 
+  #returns an array of all students in grade 9
   def self.count_all_students_in_grade_9
-    
+    sql = <<-SQL 
+      SELECT COUNT(*)
+      FROM students 
+      WHERE students.grade = 9
+    SQL 
   end
 
   def self.drop_table
