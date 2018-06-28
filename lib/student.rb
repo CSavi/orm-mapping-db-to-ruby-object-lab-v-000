@@ -71,7 +71,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE students.grade <= 11
+      WHERE students.grade < 12
     SQL
   #  binding.pry
     DB[:conn].execute(sql).flatten
