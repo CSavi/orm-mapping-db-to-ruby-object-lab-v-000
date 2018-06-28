@@ -97,8 +97,6 @@ class Student
       SELECT *
       FROM students
       WHERE students.grade = 10
-      GROUP BY students.grade
-      ORDER BY students.grade DESC LIMIT 1
     SQL
   end
 
