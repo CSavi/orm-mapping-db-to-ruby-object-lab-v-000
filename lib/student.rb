@@ -96,7 +96,8 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE students.grade = 10 LIMIT 1
+      WHERE students.grade = 10
+      ORDER BY DESC LIMIT 1
     SQL
   end
 
