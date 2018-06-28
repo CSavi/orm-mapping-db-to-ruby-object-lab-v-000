@@ -97,8 +97,8 @@ class Student
       SELECT *
       FROM students
       WHERE students.grade = 10
-      GROUP BY students.id = 1
-      ORDER BY studnets.id = 1
+      GROUP BY students.grade
+      ORDER BY studnets.grade DESC LIMIT 1
     SQL
   end
 
